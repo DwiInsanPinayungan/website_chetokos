@@ -9,8 +9,11 @@ ENV PHP_ERRORS_STDERR 1
 ENV RUN_SCRIPTS 1
 ENV REAL_IP_HEADER 1
 
-# Tahap Instalasi (Sudah Berhasil)
+# Instalasi Laravel
 RUN composer install --no-dev --optimize-autoloader --ignore-platform-reqs
 
-# PERBAIKAN: Menggunakan chmod agar semua sistem bisa akses
+# PERBAIKAN FINAL: Membuat folder yang hilang secara paksa
+RUN mkdir -p /var/www/html/storage/framework/cache /var/www/html/storage/framework/sessions /var/www/html/storage/framework/views /var/www/html/storage/app /var/www/html/storage/logs
+
+# Beri izin akses
 RUN chmod -R 777 /var/www/html/storage /var/www/html/bootstrap/cache
