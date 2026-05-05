@@ -1,11 +1,3 @@
-<?php
-
-use Illuminate\Support\Facades\Route;
-
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/chatbot', function () {
-    return view('chatbot');
+Route::get('/cs', function () {
+    return view('cs');
 });
