@@ -561,7 +561,7 @@
     </footer>
 
     <!-- Floating Chatbot Button -->
-<a href="/index.php/chatbot"
+<a href="/index.php/cs">
     style="position: fixed; bottom: 30px; right: 30px; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; box-shadow: 0 4px 25px rgba(0, 210, 255, 0.3); z-index: 1000; text-decoration: none; transition: 0.3s;"
     onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
     <i class="fas fa-comment-dots"></i>
